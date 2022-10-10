@@ -68,22 +68,12 @@ public class IndividualController {
 	   }
 	}
 	
-	@PutMapping({"/v1.0/{customerId}"})
-	public ResponseEntity<String> updateIndividual(@PathVariable("customerId") long customerId,
-			@RequestParam(name = "email") String email, 
-			@RequestParam(name="contactNumber") long contactNumber) {
-		 Individual individualObj=this.individualService.updateIndividual(customerId,
-				 email, contactNumber);
-		  Gson gson=new Gson();
-		  if(individualObj!=null) {
-			  return ResponseEntity.status(HttpStatus.CREATED)
-					  .body(gson.toJson(individualObj));
-		  }
-		  else
-		  {
-			  return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-					  .body("Customer Data Not updated");
-		  }
+	@PutMapping({"/v1.0/{customerId}")
+	public Individual updateIndividual(@PathVariable("customerId") long customerId,
+			@RequestParam(name = "email") String email){
+) {
+		
 	}
+	
 	
 }

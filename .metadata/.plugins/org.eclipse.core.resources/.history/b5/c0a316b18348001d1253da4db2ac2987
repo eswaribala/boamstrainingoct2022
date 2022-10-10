@@ -73,7 +73,7 @@ public class IndividualController {
 			@RequestParam(name = "email") String email, 
 			@RequestParam(name="contactNumber") long contactNumber) {
 		 Individual individualObj=this.individualService.updateIndividual(customerId,
-				 email, contactNumber);
+				 email, contactNumber)
 		  Gson gson=new Gson();
 		  if(individualObj!=null) {
 			  return ResponseEntity.status(HttpStatus.CREATED)
