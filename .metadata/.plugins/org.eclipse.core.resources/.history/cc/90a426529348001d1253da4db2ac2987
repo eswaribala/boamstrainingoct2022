@@ -1,18 +1,4 @@
-schema {
-    query: Query  
-  
-}
-
-type Customer {
-    customerId: ID!
-	name: FullName
-	email: String
-	password: String
-	contactNumber: long
-
-}
-
-type Individual @inherits(type: "Customer"){
+type Corporate @inherits(type: "Customer"){
 	
 	gender:String
 }

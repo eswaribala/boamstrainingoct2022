@@ -4,6 +4,11 @@ type Corporate @inherits(type: "Customer"){
 }
 
 
+
+
+
+
+
 extend type Query {
 	findAllCorporates:[Corporate]
 	findCorporate(customerId: ID):Corporate

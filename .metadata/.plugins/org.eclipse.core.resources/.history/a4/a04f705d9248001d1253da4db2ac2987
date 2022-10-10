@@ -12,7 +12,7 @@ type Customer {
 
 }
 
-type Individual @inherits(type: "Customer"){
+type Individual {
 	
 	gender:String
 }
