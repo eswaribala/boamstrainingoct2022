@@ -3,11 +3,12 @@ package com.boa.customerapi.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import com.boa.customerapi.models.Customer;
+
 import com.boa.customerapi.models.Individual;
 import com.boa.customerapi.repositories.IndividualRepository;
-
+@Service
 public class IndividualServiceImpl implements IndividualService{
 	@Autowired
 	private IndividualRepository individualRepository;

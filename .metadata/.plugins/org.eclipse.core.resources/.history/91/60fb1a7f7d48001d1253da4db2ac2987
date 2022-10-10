@@ -1,0 +1,26 @@
+package com.boa.customerapi.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.boa.customerapi.services.IndividualService;
+
+@RestController
+@RequestMapping("/individuals")
+public class IndividualController {
+	
+	@Autowired
+	private IndividualService individualService;
+	
+
+	//post
+	
+	
+	
+	//get
+	
+	
+	
+	
+}

@@ -3,10 +3,11 @@ package com.boa.customerapi.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.boa.customerapi.models.Corporate;
 import com.boa.customerapi.repositories.CorporateRepository;
-
+@Service
 public class CorporateServiceImpl implements CorporateService{
 	@Autowired
 	private CorporateRepository CorporateRepository;
