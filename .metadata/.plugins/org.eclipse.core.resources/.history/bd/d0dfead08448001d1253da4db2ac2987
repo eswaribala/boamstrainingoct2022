@@ -75,11 +75,11 @@ public class CustomerSwaggerConfiguration {
     @Bean
     public Docket api20Docket() {
         return new Docket(DocumentationType.SWAGGER_2)
-        		.groupName("corporate-api-1.0")
+        		.groupName("corporate-api-1.1")
                 .select()
                 .apis(RequestHandlerSelectors
                         .basePackage("com.boa.customerapi"))
-                .paths(PathSelectors.regex("/corporates/v1.0.*"))
+                .paths(PathSelectors.regex("/corporates/v1.1.*"))
                 .build()
                 .apiInfo(getApiInfo())
                 .forCodeGeneration(true)
@@ -94,7 +94,7 @@ public class CustomerSwaggerConfiguration {
                 .useDefaultResponseMessages(false);
     }
     @Bean
-    public Docket api21Docket() {
+    public Docket api20Docket() {
         return new Docket(DocumentationType.SWAGGER_2)
         		.groupName("corporate-api-1.1")
                 .select()
