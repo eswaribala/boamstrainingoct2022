@@ -1,0 +1,15 @@
+type Address {
+	addressId: ID!
+	streetName: String
+ 	city: String
+    pinCode: long 
+    customer: Customer 
+   
+}
+
+
+extend type Query {
+	findAllAddresses: [Address]
+	findAddress(addressId: ID): Address
+}
+

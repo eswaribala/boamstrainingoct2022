@@ -10,6 +10,6 @@ type Address {
 
 extend type Query {
 	findAllAddresses: [Address]
-	findAddress(addressId: ID): Address
+	findAddress(customerId: ID): [Address]
 }
 

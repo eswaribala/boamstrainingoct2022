@@ -1,0 +1,18 @@
+package com.boa.customerapi.queryresolvers;
+
+import org.springframework.stereotype.Component;
+
+import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+@Component
+public class AddressResolver implements GraphQLQueryResolver{
+	@Autowired
+	private AddressService addressService;
+	
+	public List<Address> findAllAddresses(){
+		return this.addressService.getAllAddresses();
+	}
+	public Address findAddress(long addressId){
+		return this.addressService.getAddressById(addressId);
+	}
+
+}

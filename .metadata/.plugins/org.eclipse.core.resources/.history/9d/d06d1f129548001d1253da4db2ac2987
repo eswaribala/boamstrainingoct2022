@@ -1,0 +1,17 @@
+package com.boa.customerapi.queryresolvers;
+
+import java.util.List;
+
+import com.boa.customerapi.models.Individual;
+import com.boa.customerapi.services.IndividualService;
+import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+
+public class IndividualQueryResolver implements GraphQLQueryResolver {
+    @Autowired 
+	private IndividualService individualService;
+	
+	public List<Individual> findAllIndividuals(){
+		
+	}
+	
+}
