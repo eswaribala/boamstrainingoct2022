@@ -1,0 +1,9 @@
+package com.boa.customerapi.models;
+
+import javax.persistence.Entity;
+
+@Entity
+@SuperBuilder
+public class Individual extends Customer {
+
+}

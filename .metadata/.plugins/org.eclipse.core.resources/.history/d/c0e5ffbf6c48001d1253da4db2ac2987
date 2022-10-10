@@ -1,0 +1,5 @@
+package com.boa.customerapi.models;
+@Entity
+public class Individual {
+
+}

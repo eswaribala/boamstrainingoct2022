@@ -1,0 +1,12 @@
+package com.boa.customerapi.models;
+
+import javax.persistence.Column;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+
+public class Corporate {
+    @Enumerated(EnumType.STRING)
+    @Column(name="Company_Type",nullable = false)
+	private CompanyType companyType;
+
+}

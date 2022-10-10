@@ -1,0 +1,14 @@
+package com.boa.customerapi.models;
+
+import javax.persistence.Column;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import lombok.experimental.SuperBuilder;
+@SuperBuilder
+@Entity
+public class Corporate extends Customer{
+    @Enumerated(EnumType.STRING)
+    @Column(name="Company_Type",nullable = false)
+	private CompanyType companyType;
+
+}
