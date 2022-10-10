@@ -1,0 +1,58 @@
+schema {
+    query: Query  
+  
+}
+
+type Customer {
+    customerId: ID!
+	name: FullName
+	email: String
+	password: String
+	contactNumber: long
+
+}
+
+type Individual {
+	
+	gender:String
+}
+
+
+
+
+type FullName {
+
+firstName: String
+lastName: String
+middleName: String
+
+}
+
+input CustomerInput{
+
+  customerId: ID!
+	name: FullNameInput
+	dob:String
+	gender:String
+
+}
+
+input FullNameInput {
+
+firstName: String
+lastName: String
+middleName: String
+
+}
+
+
+type Query {
+	findAllCustomers:[Customer]
+	findCustomer(customerId: ID):Customer
+}
+
+
+type Mutation {
+	createCustomer(customerInput:CustomerInput):Customer
+       
+}
