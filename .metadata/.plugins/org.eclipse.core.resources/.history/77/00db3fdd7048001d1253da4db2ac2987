@@ -1,0 +1,12 @@
+package com.boa.customerapi.services;
+
+import com.boa.customerapi.models.Customer;
+
+public interface CustomerService {
+	
+	Customer addCustomer(Customer customer);
+	Customer updateCustomer(long customerId, String email, long contactNumber);
+	
+	
+
+}

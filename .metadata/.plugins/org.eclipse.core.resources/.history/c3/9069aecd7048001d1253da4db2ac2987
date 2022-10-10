@@ -1,0 +1,8 @@
+package com.boa.customerapi.services;
+
+public interface CustomerService {
+	
+	Customer addCustomer(Customer customer);
+	
+
+}

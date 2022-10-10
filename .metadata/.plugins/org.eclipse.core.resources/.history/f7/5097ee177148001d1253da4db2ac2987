@@ -1,0 +1,12 @@
+package com.boa.Addressapi.services;
+
+import java.util.List;
+
+
+public interface AddressService {
+	Address addAddress(Address Address);
+	Address updateAddress(long AddressId, String email, long contactNumber);
+	List<Address> viewAllAddresss();
+	Address viewAddressById(long AddressId);
+	boolean deleteAddressById(long AddressId);
+}

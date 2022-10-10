@@ -1,0 +1,14 @@
+package com.boa.customerapi.services;
+
+import java.util.List;
+
+import com.boa.customerapi.models.Address;
+
+
+public interface AddressService {
+	Address addAddress(Address Address);
+	Address updateAddress(long addessId, String streetName, String city, long pincode);
+	List<Address> viewAllAddresss(long customerId);
+	Address viewAddressById(long customerId);
+	boolean deleteAddressById(long customerId);
+}
