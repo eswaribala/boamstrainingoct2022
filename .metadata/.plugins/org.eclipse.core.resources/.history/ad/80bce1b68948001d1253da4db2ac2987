@@ -1,0 +1,8 @@
+package com.boa.customerapi.payloads;
+
+public class ResponseWrapper<T> {
+	private String version;
+	private String message;
+	private T payload;
+
+}

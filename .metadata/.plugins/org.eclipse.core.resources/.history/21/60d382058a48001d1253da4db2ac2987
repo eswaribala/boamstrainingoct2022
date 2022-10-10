@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.boa.customerapi.models.Individual;
-import com.boa.customerapi.payloads.ResponseWrapper;
 import com.boa.customerapi.services.IndividualService;
 import com.google.gson.Gson;
 
@@ -48,18 +47,17 @@ public class IndividualController {
 	
 	//post
 		@PostMapping({"/v1.1/"})
-		public ResponseEntity<ResponseWrapper> addIndividualV11(@RequestBody Individual individual) {
+		public ResponseEntity<String> addIndividualV11(@RequestBody Individual individual) {
 			
 		  Individual individualObj=this.individualService.addIndividual(individual);
 		  
 		  if(individualObj!=null) {
-			  return ResponseEntity.status(HttpStatus.CREATED)
-					  .body(new ResponseWrapper(individualObj));
+			  return new ResponseWrapper(individualObj)
 		  }
 		  else
 		  {
 			  return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-					  .body(new ResponseWrapper("v1.1","Customer could not be added"));
+					  .body("Customer Data Not saved");
 		  }
 		}
 	

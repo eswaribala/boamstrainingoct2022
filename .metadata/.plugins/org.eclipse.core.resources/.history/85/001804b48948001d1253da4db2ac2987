@@ -1,0 +1,5 @@
+package com.boa.customerapi.payloads;
+
+public class ResponseWrapper {
+
+}

@@ -53,13 +53,12 @@ public class IndividualController {
 		  Individual individualObj=this.individualService.addIndividual(individual);
 		  
 		  if(individualObj!=null) {
-			  return ResponseEntity.status(HttpStatus.CREATED)
-					  .body(new ResponseWrapper(individualObj));
+			  return new ResponseWrapper(individualObj);
 		  }
 		  else
 		  {
 			  return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-					  .body(new ResponseWrapper("v1.1","Customer could not be added"));
+					  .body("Customer Data Not saved");
 		  }
 		}
 	
