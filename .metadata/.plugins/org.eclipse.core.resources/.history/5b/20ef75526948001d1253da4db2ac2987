@@ -1,0 +1,6 @@
+package com.boa.customerapi.models;
+
+public class Customer {
+
+	private FullName name;
+}

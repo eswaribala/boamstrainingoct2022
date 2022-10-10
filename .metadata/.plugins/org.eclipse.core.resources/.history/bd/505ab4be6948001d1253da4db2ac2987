@@ -1,0 +1,6 @@
+package com.boa.customerapi.models;
+@Entity
+@Table(name="Address")
+public class Address {
+
+}

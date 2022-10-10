@@ -1,0 +1,27 @@
+package com.boa.customerapi.models;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Address")
+public class Address {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="Address_Id")
+	private long addressId;
+    @Column(name="Street_Name",nullable = false,length = 150)
+    private String streetName;
+    @Column(name="City",nullable = false,length = 100)
+    private String city;
+    @Column(name="Pincode")
+    private long pinCode;
+    
+    private Customer customer;
+    
+    
+}
