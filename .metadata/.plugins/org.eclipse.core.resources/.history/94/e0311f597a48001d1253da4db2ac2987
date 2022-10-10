@@ -1,0 +1,45 @@
+package com.boa.customerapi.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.boa.customerapi.models.Customer;
+import com.boa.customerapi.repositories.IndividualRepository;
+
+public class CustomerServiceImpl implements IndividualService{
+	@Autowired
+	private IndividualRepository individualRepository;
+	
+
+	@Override
+	public Customer addCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		return individualRepository.save(customer);
+	}
+
+	@Override
+	public Customer updateCustomer(long customerId, String email, long contactNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Customer> viewAllCustomers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Customer viewCustomerById(long customerId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean deleteCustomerById(long customerId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -6,6 +6,7 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Table;
 
+import lombok.Data;
 import lombok.experimental.SuperBuilder;
 
 @Entity

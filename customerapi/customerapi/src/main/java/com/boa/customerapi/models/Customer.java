@@ -10,12 +10,14 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
+import lombok.Data;
 import lombok.experimental.SuperBuilder;
 
 @Entity
 @Table(name="Customer")
 @Inheritance(strategy = InheritanceType.JOINED)
 @SuperBuilder
+@Data
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
