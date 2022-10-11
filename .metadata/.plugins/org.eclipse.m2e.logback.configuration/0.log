@@ -2029,3 +2029,19 @@ org.eclipse.core.runtime.CoreException: Launch configuration CustomerapiApplicat
 2022-10-11 13:26:09,276 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2022-10-11 13:26:09,282 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-10-11 13:26:09,282 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\boamsoct2022\configserver\configserver\src\test\resources
+2022-10-11 13:31:39,048 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-10-11 14:21:20,612 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-11 14:21:20,621 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-10-11 14:21:20,649 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-11 14:21:20,655 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-11 14:21:20,655 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\boamsoct2022\configserver\configserver\src\test\resources
+2022-10-11 14:21:36,641 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.5; built: 2021-06-11T14:18:43.438Z; git: dc21b2d73cafd78a56e8e532cf50863739bd7027; jvm 16.0.2+7-67
+2022-10-11 14:21:36,793 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2022-10-11 14:21:36,856 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@256e9e6a{/help,null,AVAILABLE}
+2022-10-11 14:21:36,903 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@77f212f3{HTTP/1.1, (http/1.1)}{127.0.0.1:54575}
+2022-10-11 14:21:36,906 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@65ec169a{STARTING}[10.0.5,sto=0] @3025001ms
+2022-10-11 14:21:44,926 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-11 14:21:44,932 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-10-11 14:21:44,935 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-11 14:21:44,940 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-11 14:21:44,940 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\boamsoct2022\configserver\configserver\src\test\resources
