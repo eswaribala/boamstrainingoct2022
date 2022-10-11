@@ -1,0 +1,21 @@
+interface Customer {
+    customerId: ID!
+	name: FullName
+	email: String
+	password: String
+	contactNumber: long
+
+}
+
+type Corporate implements Customer{
+	
+	companyType:String
+}
+
+
+extend type Query {
+	findAllCorporates:[Corporate]
+	findCorporate(customerId: ID):Corporate
+}
+
+

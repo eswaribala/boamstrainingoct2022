@@ -1,5 +1,10 @@
-type Corporate @inherits(type: "Customer"){
-	
+
+type Corporate implements Customer{
+	customerId: ID!
+	name: FullName
+	email: String
+	password: String
+	contactNumber: Long
 	companyType:String
 }
 

@@ -3,17 +3,22 @@ schema {
   
 }
 
-type Customer {
+
+interface Customer  {
     customerId: ID!
 	name: FullName
 	email: String
 	password: String
-	contactNumber: long
+	contactNumber: Long
 
 }
 
-type Individual @inherits(type: "Customer"){
-	
+type Individual implements Customer {
+    customerId: ID!
+	name: FullName
+	email: String
+	password: String
+	contactNumber: Long
 	gender:String
 }
 

@@ -1,0 +1,38 @@
+schema {
+    query: Query  
+  
+}
+
+type Customer {
+    customerId: ID!
+	name: FullName
+	email: String
+	password: String
+	contactNumber: long
+
+}
+
+type Individual @inherits(type: "Customer"){
+	
+	gender:String
+}
+
+
+
+
+type FullName {
+
+	firstName: String
+	lastName: String
+	middleName: String
+
+}
+
+
+
+type Query {
+	findAllIndividuals:[Individual]
+	findIndividual(customerId: ID):Individual
+}
+
+
