@@ -1,0 +1,12 @@
+FROM maven:3.8.4-openjdk-11-slim AS build
+WORKDIR /home/app
+COPY src src
+COPY pom.xml pom.xml
+RUN mvn clean install -Dmaven.test.skip=true
+
+FROM openjdk:11.0
+LABEL "com.boa.customerapi"="customer-api"
+LABEL version=1.0-SNAPSHOT
+COPY --from=build /home/app/target/customer-api.jar customer-api.jar
+EXPOSE 7070
+ENTRYPOINT ["java","-jar","customer-api.jar"]
