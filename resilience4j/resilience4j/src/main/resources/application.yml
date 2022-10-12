@@ -13,7 +13,7 @@ resilience4j:
         retry-exceptions:
          - org.springframework.web.client.RestClientException
         ignore-exceptions:
-         - com.boa.resillience4j.exceptions.IgnoreException
+         - com.boa.resilience4j.exceptions.IgnoreException
   circuitbreaker:
     circuit-breaker-aspect-order: 1
     instances:
