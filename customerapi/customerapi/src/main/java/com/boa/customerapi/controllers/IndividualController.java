@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.boa.customerapi.models.Individual;
 import com.boa.customerapi.payloads.ResponseWrapper;
+import com.boa.customerapi.services.AccountMessagingService;
 import com.boa.customerapi.services.IndividualService;
 import com.google.gson.Gson;
 
@@ -26,7 +27,8 @@ public class IndividualController {
 	
 	@Autowired
 	private IndividualService individualService;
-	
+	@Autowired
+	private AccountMessagingService accountMessagingService;
 
 	//post
 	@PostMapping({"/v1.0/"})
@@ -104,5 +106,17 @@ public class IndividualController {
 					  .body("Customer Data Not updated");
 		  }
 	}
+	
+	@GetMapping({"/v1.0/accounts/{accountNo}"})
+	public ResponseEntity<String> publishAccountNo(@PathVariable("accountNo") long accountNo) {
+	   if(this.accountMessagingService.publishAccountNo(accountNo))
+		   return ResponseEntity.status(HttpStatus.ACCEPTED)
+				   .body("Data Published");
+	   else
+		   return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+				   .body("Data not Published");
+		   
+	}
+	
 	
 }
