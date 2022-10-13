@@ -1,10 +1,9 @@
 
 type CurrentAccount implements Account{
-	 accountNo: ID!
+	accountNo: ID!
 	runningTotal: Long
 	openingDate: String
-	overDraftLimit: Long 
-}
+	overDraftLimit: Long
 }
 
 

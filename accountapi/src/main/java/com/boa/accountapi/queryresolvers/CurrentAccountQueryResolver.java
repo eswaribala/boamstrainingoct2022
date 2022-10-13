@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 import com.boa.accountapi.models.CurrentAccount;
 import com.boa.accountapi.models.CurrentAccount;
 import com.boa.accountapi.services.CurrentService;
-import com.boa.accountapi.services.CurrentService;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 @Component
 public class CurrentAccountQueryResolver implements GraphQLQueryResolver {
