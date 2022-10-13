@@ -1,0 +1,16 @@
+
+type CurrentAccount implements Account{
+	 accountNo: ID!
+	runningTotal: Long
+	openingDate: String
+	overDraftLimit: Long 
+}
+}
+
+
+extend type Query {
+	findAllCurrentAccounts:[CurrentAccount]
+	findCurrentAccount(accountNo: ID):CurrentAccount
+}
+
+

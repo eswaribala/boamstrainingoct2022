@@ -1,0 +1,32 @@
+schema {
+    query: Query  
+  
+}
+
+
+interface Account  {
+    accountNo: ID!
+	runningTotal: Long
+	openingDate: String
+	
+}
+
+type SavingsAccount implements Account {
+    accountNo: ID!
+	runningTotal: Long
+	openingDate: String
+	roi: Float
+}
+
+
+
+
+
+
+
+type Query {
+	findAllSavingsAccount:[SavingsAccount]
+	findSavingsAccount(accountNo: ID):SavingsAccount
+}
+
+
