@@ -17,7 +17,7 @@
             </PatternLayout>
         </File>
         <Elasticsearch name="elasticsearchAsyncBatch">
-            <IndexName indexName="pslogindex" />
+            <IndexName indexName="boacustomerlogindex" />
             <JacksonJsonLayout />
             <AsyncBatchDelivery>
                 <IndexTemplate name="log4j2" path="classpath:indexTemplate.json" />

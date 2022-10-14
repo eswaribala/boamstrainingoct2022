@@ -25,7 +25,7 @@ import org.apache.logging.log4j.Logger;
 @RestController
 @RequestMapping("/individuals")
 public class IndividualController {
-	  private static final Logger LOGGER = LogManager.getLogger(IndividualController.class);
+    private static final Logger LOGGER = LogManager.getLogger(IndividualController.class);
 	@Autowired
 	private IndividualService individualService;
 	
