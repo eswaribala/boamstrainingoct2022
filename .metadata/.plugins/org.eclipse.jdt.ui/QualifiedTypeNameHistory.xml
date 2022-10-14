@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
-    <fullyQualifiedTypeName name="com.boa.customerapi.payloads.ResponseWrapper"/>
     <fullyQualifiedTypeName name="io.swagger.annotations.ApiModelProperty"/>
     <fullyQualifiedTypeName name="com.boa.customerapi.models.Individual"/>
     <fullyQualifiedTypeName name="com.boa.customerapi.services.IndividualService"/>
     <fullyQualifiedTypeName name="com.boa.customerapi.services.CorporateService"/>
     <fullyQualifiedTypeName name="com.boa.customerapi.models.Corporate"/>
     <fullyQualifiedTypeName name="com.coxautodev.graphql.tools.GraphQLQueryResolver"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="com.boa.customerapi.services.AddressService"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.boa.customerapi.models.Address"/>
@@ -31,13 +28,9 @@
     <fullyQualifiedTypeName name="org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker"/>
     <fullyQualifiedTypeName name="org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard"/>
     <fullyQualifiedTypeName name="org.springframework.cloud.netflix.hystrix.EnableHystrix"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
-    <fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
-    <fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
     <fullyQualifiedTypeName name="com.boa.hystrix.handlers.CustomerHandler"/>
-    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="com.boa.resilience4j.services.Service"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
@@ -45,7 +38,6 @@
     <fullyQualifiedTypeName name="com.boa.accountapi.models.SavingsAccount"/>
     <fullyQualifiedTypeName name="org.springframework.cloud.stream.annotation.Output"/>
     <fullyQualifiedTypeName name="com.boa.customerapi.facades.AccountFacade"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.messaging.support.MessageBuilder"/>
     <fullyQualifiedTypeName name="org.springframework.messaging.MessageHeaders"/>
     <fullyQualifiedTypeName name="org.springframework.util.MimeTypeUtils"/>
@@ -55,9 +47,17 @@
     <fullyQualifiedTypeName name="org.springframework.cloud.stream.annotation.Input"/>
     <fullyQualifiedTypeName name="org.springframework.cloud.stream.annotation.EnableBinding"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-    <fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
     <fullyQualifiedTypeName name="com.boa.accountapi.payloads.MessageWrapper"/>
     <fullyQualifiedTypeName name="org.springframework.cloud.stream.annotation.StreamListener"/>
     <fullyQualifiedTypeName name="com.boa.accountapi.facade.AccountFacade"/>
     <fullyQualifiedTypeName name="org.springframework.messaging.handler.annotation.Payload"/>
+    <fullyQualifiedTypeName name="org.camunda.bpm.engine.delegate.JavaDelegate"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="java.net.ConnectException"/>
 </qualifiedTypeNameHistroy>
